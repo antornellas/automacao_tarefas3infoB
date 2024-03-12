@@ -1,0 +1,15 @@
+'''
+Para utilizarmos as funções criadas em outros arquivos
+de códigos fonte, devemos importá-las. Para isso 
+utilizamos o comando import ou from import.
+ 
+Exemplo 1: Importar todas as funções do arquivo funções
+ '''
+
+import funcoes
+
+base = float(input('Digite a base do tiângulo: '))
+altura = float(input("Digite a altura do triângulo: "))
+
+area = funcoes.calcularAreaTriangulo(base,altura)
+print(area)
