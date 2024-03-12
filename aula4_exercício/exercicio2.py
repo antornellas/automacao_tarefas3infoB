@@ -8,6 +8,7 @@ Exemplo de entrada:
 Exemplo Saída: O reusltado da soma é 3.5
 '''
 
+#entradas
 print('Digite um número:')
 n1= float(input())
 print('Digite mais um número:')
@@ -15,6 +16,7 @@ n2= float(input())
 print('Digite um operador básico matemático que deseja: + para soma,- para subtração,* para multiplicação e / para divisão.')
 operador= (input())
 
+#processamento
 if operador == ('+') :
     soma=n1 + n2
     print('Resultado da soma:', soma)
@@ -24,6 +26,8 @@ elif operador == ('-') :
 elif operador == ('*') :
     multiplicação=n1 * n2
     print('Resultado da multiplicação:', multiplicação)
-else:  
+elif operador == ('/') :    
     divisão=n1 / n2
     print('Resultado da divisão:', divisão)       
+else:
+    print('Operador desconhecido')
