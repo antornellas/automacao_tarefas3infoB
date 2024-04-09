@@ -18,7 +18,9 @@ import pyautogui
 
 
 #Localizar um item na tela
-
-
+#btnXY = pyautogui.locateCenterOnScreen('./aula7_revisao/btn_edit.png')
+btnXY = pyautogui.locateCenterOnScreen('./aula7_revisao/fieldgoogle.png')
+pyautogui.click(btnXY, duration=0.5)
+pyautogui.write
 
 #colar bolinha
