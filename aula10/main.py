@@ -1,48 +1,61 @@
 import pyautogui
+import time
 
-campoAtleta = pyautogui.locateCenterOnScreen(
-    "atleta1.png",
-    grayscale=True,
-    confidence=0.8
-    )
-pyautogui.click(campoAtleta, duration = 0.7)
-pyautogui.write("Nova Atleta")
+def preencher(atleta, modalidade, medalha, comite):
 
-
-campoModalidade = pyautogui.locateCenterOnScreen(
-    "Modalidade.png",
-    grayscale=True,
-    confidence=0.8
-    )
-pyautogui.click(campoModalidade, duration = 0.7)
-pyautogui.write("Nova Modalidade")
+    campoAtleta = pyautogui.locateCenterOnScreen(
+        "atleta1.png",
+        grayscale=True,
+        confidence=0.8
+        )
+    pyautogui.click(campoAtleta, duration = 0.7)
+    pyautogui.write(atleta)
 
 
-campoMedalha = pyautogui.locateCenterOnScreen(
-    "Medalha.png",
-    grayscale=True,
-    confidence=0.8
-    )
-pyautogui.click(campoMedalha, duration = 0.7)
-pyautogui.write("Nova Medalha")
+    campoModalidade = pyautogui.locateCenterOnScreen(
+        "Modalidade.png",
+        grayscale=True,
+        confidence=0.8
+        )
+    pyautogui.click(campoModalidade, duration = 0.7)
+    pyautogui.write(modalidade)
 
 
-campoComite = pyautogui.locateCenterOnScreen(
-    "Comite.png",
-    grayscale=True,
-    confidence=0.8
-    )
-pyautogui.click(campoComite, duration = 0.7)
-pyautogui.write("Novo comite")
+    campoMedalha = pyautogui.locateCenterOnScreen(
+        "Medalha.png",
+        grayscale=True,
+        confidence=0.8
+        )
+    pyautogui.click(campoMedalha, duration = 0.7)
+    pyautogui.write(medalha)
 
-campoEnviar = pyautogui.locateCenterOnScreen(
-    "enviar.png",
-    grayscale=True,
-    confidence=0.8
-    )
-pyautogui.click(campoEnviar, duration = 0.7)
 
-#rolar tela: 
-#import time
-#pyautogui.scroll(y=300)
-#time.slepp(2)
+    campoComite = pyautogui.locateCenterOnScreen(
+        "Comite.png",
+        grayscale=True,
+        confidence=0.8
+        )
+    pyautogui.click(campoComite, duration = 0.7)
+    pyautogui.write(comite)
+
+    campoEnviar = pyautogui.locateCenterOnScreen(
+        "enviar.png",
+        grayscale=True,
+        confidence=0.8
+        )
+    pyautogui.click(campoEnviar, duration = 0.7)
+    time.sleep(2)
+
+    campoEnviar = pyautogui.locateCenterOnScreen(
+        "outraEnviar.png",
+        grayscale=True,
+        confidence=0.8
+        )
+    pyautogui.click(campoEnviar, duration = 0.7)
+
+    #rolar tela: 
+    #import time
+    #pyautogui.scroll(y=300)
+    #time.slepp(2)
+
+    time.sleep(1)
